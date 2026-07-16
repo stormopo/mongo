@@ -4,6 +4,7 @@ from pymongo import MongoClient
 from tabulate import tabulate
 
 mongo_uri = "mongodb://crypto_user:Nf8#Lp92!QwZr4%40c@MONGO-AZ1-ND01:27017,MONGO-AZ2-ND02:27017,MONGO-AZ3-ND03:27017/crypto?authSource=admin&replicaSet=prodreplica&readPreference=secondaryPreferred"
+# mongo_uri = "mongodb://localhost:27017/kg"
 
 def main():
     action = sys.argv[1] if len(sys.argv) > 1 else None
