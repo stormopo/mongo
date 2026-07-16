@@ -34,7 +34,7 @@ jobs:
         run: |
           pyinstaller --onefile mongo.py --name mongo-ubuntu-22.04-python-3.10
       - name : Upload Linux binary to release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
           name: Release binaries
