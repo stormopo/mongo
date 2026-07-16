@@ -3,7 +3,7 @@ import json
 from pymongo import MongoClient
 from tabulate import tabulate
 
-mongo_uri = "mongodb://proddbuser:PGSReady@MONGO-AZ1-ND01:27017,MONGO-AZ2-ND02:27017,MONGO-AZ3-ND03:27017/pgsproddb?authSource=admin&replicaSet=prodreplica&readPreference=secondaryPreferred"
+mongo_uri = "mongodb://proddbuser:PGSReady@pgs-iad-prd-mdb-01.paysecure.internal:27017,pgs-iad-prd-mdb-02.paysecure.internal:27017,pgs-iad-prd-mdb-03.paysecure.internal:27017/pgsproddb?authSource=admin&replicaSet=prodreplica&readPreference=secondaryPreferred"
 # mongo_uri = "mongodb://localhost:27017/kg"
 
 def main():
