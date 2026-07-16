@@ -33,9 +33,8 @@ jobs:
       - name: Build (PyInstaller --onefile)
         run: |
           pyinstaller --onefile mongo.py --name mongo-ubuntu-22.04-python-3.10
-      - name : Upload Linux binary to release
-        uses: softprops/action-gh-release@v2
+      - name: Upload Linux artifact
+        uses: actions/upload-artifact@v4
         with:
-          tag_name: latest
-          name: Release binaries
-          files: dist/*
+          name: mongo-ubuntu-22.04-python-3.10
+          path: dist/mongo-ubuntu-22.04-python-3.10
